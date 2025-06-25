@@ -1,24 +1,28 @@
-*{
+/* Reset default browser styles and ensure all elements follow border-box sizing */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+/* Set background color for the entire body */
+body {
     background-color: #001e4d;
 }
 
-.app{
+/* Main container of the app */
+.app {
     background: #fff;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
+    width: 90%; /* Use 90% of the screen width for smaller devices */
+    max-width: 600px; /* Don't exceed 600px on wider screens */
+    margin: 100px auto 0; /* Center horizontally and add top margin */
     border-radius: 10px;
     padding: 30px;
 }
 
-.app h1{
+/* App header styling */
+.app h1 {
     font-size: 25px;
     color: #001e4d;
     font-weight: 600;
@@ -26,56 +30,91 @@ body{
     padding-bottom: 30px;
 }
 
-.quiz{
+/* Quiz wrapper padding */
+.quiz {
     padding: 20px 0;
-
 }
 
-.quiz h2{
+/* Quiz question style */
+.quiz h2 {
     font-size: 18px;
     color: #001e4d;
     font-weight: 600;
 }
 
-
-.btn{
+/* Styling for answer buttons */
+.btn {
     background: #fff;
     color: #222;
     font-weight: 500;
-    width:100%;
-    border:1px solid #222;
+    width: 100%;
+    border: 1px solid #222;
     padding: 10px;
-    margin:10px 0;
+    margin: 10px 0;
     text-align: left;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.btn:hover:not([disabled]){
+/* Hover effect for active buttons */
+.btn:hover:not([disabled]) {
     background: #222;
     color: #fff;
 }
 
-.btn:disabled{
-    cursor: no-drop;
+/* Disabled button style */
+.btn:disabled {
+    cursor: not-allowed;
 }
 
-#next-btn{
+/* Next button styling */
+#next-btn {
     background: #001e4d;
     color: #fff;
     font-weight: 500;
     width: 150px;
-    border:0;
+    border: 0;
     padding: 10px;
     margin: 20px auto 0;
     border-radius: 4px;
     cursor: pointer;
-    display: none;
+    display: none; /* Hidden by default, will be shown via JavaScript */
 }
 
-.correct{
-    background:#9aeabc;
+/* Green background for correct answers */
+.correct {
+    background: #9aeabc;
 }
-.incorrect{
-    background:#ff9393;
+
+/* Red background for incorrect answers */
+.incorrect {
+    background: #ff9393;
+}
+
+/* ------------------------------ */
+/* RESPONSIVE DESIGN FOR SMALL SCREENS */
+/* ------------------------------ */
+@media (max-width: 480px) {
+    .app {
+        padding: 20px; /* Slightly reduce padding on smaller screens */
+        margin: 50px auto 0; /* Adjust margin for better fit */
+    }
+
+    .app h1 {
+        font-size: 20px; /* Smaller heading for mobile */
+        padding-bottom: 20px;
+    }
+
+    .quiz h2 {
+        font-size: 16px; /* Smaller question font */
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #next-btn {
+        width: 100%; /* Make next button full-width for easy tap */
+    }
 }
