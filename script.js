@@ -8,9 +8,84 @@ const questions = [
             { text: "josiah", correct: true },
             { text: "Ezekiah", correct: false },
         ]
+    },{
+        question:"What is the first book of the New Testament?",
+        answers:[
+            {text:"Genesis", correct:false},
+            {text:"Mark", correct:false},
+            {text:"Luke", correct:false},
+            {text:"Matthew", correct:true},
+        ]
     },
-    // ... (more questions follow the same structure)
+    {
+        question:" What did Jesus use to feed 5,000 people?",
+        answers:[
+            {text:" Fish and grapes", correct:false},
+            {text:" Bread and wine", correct:false},
+            {text:" 5 loaves and 2 fish", correct:true},
+            {text:" 7 loaves and 3 fish", correct:false},
+        ]
+    },
+    {
+        question:"Who betrayed Jesus with a kiss?",
+        answers:[
+            {text:"Peter", correct:false},
+            {text:"Judas", correct:true},
+            {text:"Thomas", correct:false},
+            {text:"James", correct:false},
+        ]
+    },{
+        question:"What does the armor of God help Christians do?",
+        answers:[
+            {text:"Look strong", correct:false},
+            {text:"Defeat physical enemies", correct:false},
+            {text:"Stand against evil and temptation", correct:true},
+            {text:"Build a church", correct:false},
+        ]
+    },{
+        question:"Which disciple walked on water with Jesus?",
+        answers:[
+            {text:"John", correct:false},
+            {text:"Matthew", correct:false},
+            {text:"Peter", correct:true},
+            {text:"Thomas", correct:false},
+        ]
+    },{
+        question:"Who was thrown into a lion’s den for praying to God?",
+        answers:[
+            {text:"Joseph", correct:false},
+            {text:"Daniel", correct:true},
+            {text:"Moses", correct:false},
+            {text:"Elijah", correct:false},
+        ]
+    },{
+        question:"How many days did God take to create the world (including the day of rest)?",
+        answers:[
+            {text:"5", correct:false},
+            {text:"6", correct:false},
+            {text:"7", correct:true},
+            {text:"10", correct:false},
+        ]
+    },{
+        question:"Who was swallowed by a big fish when he tried to run from God?",
+        answers:[
+            {text:"Moses", correct:false},
+            {text:"Jonah", correct:true},
+            {text:"Noah", correct:false},
+            {text:"Paul", correct:false},
+        ]
+    },{
+        question:"What is the greatest commandment according to Jesus?",
+        answers:[
+            {text:"Do not stea", correct:false},
+            {text:" Love your neighbor", correct:false},
+            {text:"Love the Lord your God with all your heart", correct:true},
+            {text:"Keep the Sabbath", correct:false},
+        ]
+    }
 ];
+    // ... (more questions follow the same structure)
+
 
 // Get references to DOM elements where we’ll display questions, answers, and the next button.
 const questionElement = document.getElementById("question");
